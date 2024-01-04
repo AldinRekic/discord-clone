@@ -33,7 +33,8 @@ export const useChatQuery = ({ queryKey, apiUrl, paramKey, paramValue }: ChatQue
 		queryKey: [queryKey],
 		queryFn: fetchMessages,
 		getNextPageParam: (lastPage) => lastPage?.nextCursor,
-		refetchInterval: isConnected ? false : 1000,
+		//Websockets have to high delay when -> refetchInterval: isConnected ? false : 1000,
+		refetchInterval: 1000,
 	});
 
 	return { data, fetchNextPage, hasNextPage, isFetchingNextPage, status };
