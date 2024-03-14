@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##   Discord Clone: Real-Time Chat Built with Next.js
 
-## Getting Started
+**Empower real-time communication** with this feature-rich Discord clone built on **Next.js**.
 
-First, run the development server:
+**Tech Stack:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Front-End:** Next.js, React, Socket.io, Tailwind CSS, ShadcnUI
+- **Back-End:** Prisma, MySQL (Supabase)
+- **Authentication:** Clerk
+
+**Key Features:**
+
+- **Seamless Chat:** Chat in real-time with **Socket.io**.
+- **Rich Messaging:** Send text, attachments, and edit/delete messages.
+- **Voice & Video Calls:** Foster deeper connections with built-in voice and video call functionalities.
+- **Channel & Server Management:** Create and manage channels and servers with roles and unique invites.
+- **Modern UI/UX:** Enjoy a visually appealing and responsive design built with **Tailwind CSS** and **ShadcnUI** (light/dark mode included).
+- **Robust Data & Security:** Leverage **Prisma** for data management and **Clerk** for secure authentication.
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/AldinRekic/discord-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
+### Setup .env file
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
 
-## Learn More
+POSTGRES_HOST=
+POSTGRES_PORT=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
 
-To learn more about Next.js, take a look at the following resources:
+DATABASE_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+WEBSOCKET_URL=
+LIVEKIT_API_KEY=
+LIVEKIT_API_SECRET=
+NEXT_PUBLIC_LIVEKIT_URL=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+### Start the app
 
-## Deploy on Vercel
+```shell
+npm run dev
+```
+## Available commands
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Running commands with npm `npm run [command]`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
